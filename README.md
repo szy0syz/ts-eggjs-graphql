@@ -33,7 +33,9 @@
 │       └── schema.graphql        | schema 定义
 ```
 
-> `egg.js` 真不适合用 `GraphQL`
+### egg-graphql issues
+
+- 没有 Mutation 时千万别写 `{}`，否则报 `GraphQLError: Syntax Error: Expected Name, found "}"` 这个错误，务必删除多余文件！！
 
 ### 流程
 
