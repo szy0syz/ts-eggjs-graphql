@@ -32,3 +32,9 @@
 │       ├── resolver.js           | 类型实现
 │       └── schema.graphql        | schema 定义
 ```
+
+> `egg.js` 真不适合用 `GraphQL`
+
+### 流程
+
+![01](docs/images/1708a75466a5aa41.jpg)

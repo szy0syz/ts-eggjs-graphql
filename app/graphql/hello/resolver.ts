@@ -1,6 +1,6 @@
 export default {
   Query: {
-    hellos(_root: any, _, { connector }) {
+    hellos(_root: any, {}, { connector }) {
       return connector.hello.hellos();
     },
   },

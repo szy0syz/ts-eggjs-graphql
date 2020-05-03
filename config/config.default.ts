@@ -8,7 +8,7 @@ export default (appInfo: EggAppInfo) => {
   config.keys = appInfo.name + '_1588491399599_6346';
 
   // add your egg config in here
-  config.middleware = [ 'graphql' ];
+  config.middleware = [ 'error', 'graphql' ];
   // config.middleware = [];
 
   // add your special config in here
@@ -39,6 +39,11 @@ export default (appInfo: EggAppInfo) => {
       tracing: true, // 设置为true时，以Apollo跟踪格式收集和公开跟踪数据
       debug: true, // 一个布尔值，如果发生执行错误，它将打印其他调试日志记录
     },
+  };
+
+  config.bodyParser = {
+    enable: true,
+    jsonLimit: '10mb',
   };
 
   // the return config will combines to EggAppConfig

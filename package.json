@@ -26,7 +26,9 @@
     "egg": "^2.6.1",
     "egg-cors": "^2.2.3",
     "egg-scripts": "^2.6.0",
-    "graphql": "^15.0.0"
+    "graphql": "^15.0.0",
+    "graphql-upload": "^10.0.0",
+    "koa-json-error": "^3.1.2"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.40",
