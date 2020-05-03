@@ -27,6 +27,7 @@
     "egg-cors": "^2.2.3",
     "egg-scripts": "^2.6.0",
     "graphql": "^15.0.0",
+    "graphql-tag": "^2.10.3",
     "graphql-upload": "^10.0.0",
     "koa-json-error": "^3.1.2"
   },
