@@ -40,6 +40,24 @@
 ### sequelize mysql
 
 - local-mysql: root/password
+- 四个依赖
+  - `npm install egg-sequelize --save`
+  - `npm install mysql2 --save`
+  - `npm install --save-dev sequelize-cli`
+  - `npm install --save-dev sequelize-auto`
+- 还是使用官方推荐的 `Migrations` 同步表结构，用 `sync:true` 坑点太多
+- 利用 `sequelize-auto` 对照数据库自动生成相应的models，使用sequelize-auto对照数据库自动生成相应的models减少了对数据库进行增删改查时的sql语句的编写
+
+```js
+const path = require('path');
+
+module.exports = {
+  config: path.join(__dirname, 'database/config.json'),
+  'migrations-path': path.join(__dirname, 'database/migrations'),
+  'seeders-path': path.join(__dirname, 'database/seeders'),
+  'models-path': path.join(__dirname, 'app/model'),
+};
+```
 
 ### 流程
 
