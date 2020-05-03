@@ -27,7 +27,10 @@
     "db:down-all": "npx sequelize db:migrate:undo:all"
   },
   "dependencies": {
+    "@alicloud/pop-core": "^1.7.9",
     "@switchdog/egg-graphql": "^3.2.0-beta.4",
+    "dataloader": "^2.0.0",
+    "dayjs": "^1.8.26",
     "egg": "^2.6.1",
     "egg-cors": "^2.2.3",
     "egg-scripts": "^2.6.0",
@@ -36,7 +39,9 @@
     "graphql-tag": "^2.10.3",
     "graphql-upload": "^10.0.0",
     "koa-json-error": "^3.1.2",
-    "mysql2": "^2.1.0"
+    "lodash": "^4.17.15",
+    "mysql2": "^2.1.0",
+    "uuid": "^8.0.0"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.40",

@@ -55,6 +55,18 @@ export default (appInfo: EggAppInfo) => {
     jsonLimit: '10mb',
   };
 
+  config.aliyun = {
+    accessKeyId: 'LTAIwPm6KYRHsSZZ',
+    accessKeySecret: 'Cx5ct1FNRb6kxjaIIUQrr6SYbJVkMJ',
+    endpoint: 'https://dysmsapi.aliyuncs.com',
+    apiVersion: '2017-05-25',
+    sendSms: {
+      RegionId: 'cn-hangzhou',
+      SignName: 'sns服务',
+      TemplateCode: 'SMS_135033928',
+    },
+  };
+
   // the return config will combines to EggAppConfig
   return {
     ...config,
