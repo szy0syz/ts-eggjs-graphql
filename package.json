@@ -30,7 +30,8 @@
     "graphql": "^15.0.0",
     "graphql-tag": "^2.10.3",
     "graphql-upload": "^10.0.0",
-    "koa-json-error": "^3.1.2"
+    "koa-json-error": "^3.1.2",
+    "mysql2": "^2.1.0"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.40",
@@ -38,12 +39,13 @@
     "@types/supertest": "^2.0.0",
     "autod": "^3.0.1",
     "autod-egg": "^1.1.0",
-    "egg-ci": "^1.8.0",
     "egg-bin": "^4.11.0",
+    "egg-ci": "^1.8.0",
     "egg-mock": "^3.16.0",
-    "tslib": "^1.9.0",
     "eslint": "^6.7.2",
     "eslint-config-egg": "^8.0.0",
+    "sequelize-cli": "^5.5.1",
+    "tslib": "^1.9.0",
     "typescript": "^3.0.0"
   },
   "engines": {

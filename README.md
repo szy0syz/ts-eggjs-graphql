@@ -37,6 +37,11 @@
 
 - 没有 Mutation 时千万别写 `{}`，否则报 `GraphQLError: Syntax Error: Expected Name, found "}"` 这个错误，务必删除多余文件！！
 
+### sequelize mysql
+
+- local-mysql: root/password
+
 ### 流程
 
 ![01](docs/images/1708a75466a5aa41.jpg)
+

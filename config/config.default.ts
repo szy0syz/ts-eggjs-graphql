@@ -41,6 +41,15 @@ export default (appInfo: EggAppInfo) => {
     },
   };
 
+  config.sequelize = {
+    dialect: 'mysql',
+    host: '127.0.0.1',
+    port: 3306,
+    username: 'root',
+    password: 'password',
+    database: 'ts-eggjs-graphql',
+  };
+
   config.bodyParser = {
     enable: true,
     jsonLimit: '10mb',
