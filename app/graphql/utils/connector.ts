@@ -15,4 +15,12 @@ export default class UtilsConnector {
     const { ctx } = this;
     return await ctx.service.utils.sendSms(PhoneNumbers);
   }
+
+  /**
+   * 获取GitHub 登录地址
+   */
+  public githubURL() {
+    const { login_url, client_id, scope } = this.ctx.app.config.github;
+    return `${login_url}?client_id=${client_id}&scope=${scope}&state=${Date.now()}`;
+  }
 }

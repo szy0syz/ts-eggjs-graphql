@@ -63,7 +63,7 @@ module.exports = {
 
 ![01](docs/images/1708a75466a5aa41.jpg)
 
-### 登录
+### 手机登录
 
 > uuidv1 + redis-setex 倒是没毛病。
 
@@ -80,3 +80,5 @@ module.exports = {
   }
 }
 ```
+
+### GitHub登录
