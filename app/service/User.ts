@@ -24,7 +24,8 @@ export default class User extends Service {
       },
     });
 
-    if (!user) return null;
+    if (!user) throw new Error('账号或密码错误');
+
     const result = JSON.stringify(user);
     await ctx.service.redis.set(uuid, result, 3600 * 24);
     return uuid;
