@@ -17,6 +17,7 @@ import 'egg-view';
 import '@switchdog/egg-graphql';
 import 'egg-cors';
 import 'egg-sequelize';
+import 'egg-redis';
 import { EggPluginItem } from 'egg';
 declare module 'egg' {
   interface EggPlugin {
@@ -35,5 +36,6 @@ declare module 'egg' {
     graphql?: EggPluginItem;
     cors?: EggPluginItem;
     sequelize?: EggPluginItem;
+    redis?: EggPluginItem;
   }
 }

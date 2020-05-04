@@ -19,6 +19,7 @@ export default class User extends Service {
     if (Number(code) === Number(r_code)) {
       return await this.database.create({ name, phone, password });
     }
+    throw new Error('验证码失效');
   }
 
   /**

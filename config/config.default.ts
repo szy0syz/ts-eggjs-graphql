@@ -67,6 +67,15 @@ export default (appInfo: EggAppInfo) => {
     },
   };
 
+  config.redis = {
+    client: {
+      port: 6379,
+      host: '127.0.0.1',
+      password: '',
+      db: 0,
+    },
+  };
+
   // the return config will combines to EggAppConfig
   return {
     ...config,
