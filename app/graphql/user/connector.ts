@@ -13,4 +13,9 @@ export default class UserConnector {
     const { ctx } = this;
     return await ctx.service.user.register(data);
   }
+
+  async fetchByNamePassword(phone: string, password: string) {
+    const { ctx } = this;
+    return await ctx.service.user.fetchByNamePassword(phone, password);
+  }
 }

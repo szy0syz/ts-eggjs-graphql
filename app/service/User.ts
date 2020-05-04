@@ -7,6 +7,29 @@ export default class User extends Service {
     this.database = ctx.model.Users;
   }
 
+
+  /**
+   * 用户登录
+   * @param {string} phone  手机号
+   * @param {string} password 密码
+   * @memberof User
+   */
+  public async fetchByNamePassword(phone: string, password: string) {
+    const { ctx } = this;
+    const uuid = ctx.helper.uuidv1();
+    const user = await this.database.findOne({
+      where: {
+        phone,
+        password,
+      },
+    });
+
+    if (!user) return null;
+    const result = JSON.stringify(user);
+    await ctx.service.redis.set(uuid, result, 3600 * 24);
+    return uuid;
+  }
+
   /**
    * 用户注册
    * @param {object} data 注册信息

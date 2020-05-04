@@ -1,3 +1,4 @@
 type Query {
   hellos: [Hello!]
+  login(data: Authentication): String!
 }

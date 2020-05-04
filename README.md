@@ -63,3 +63,20 @@ module.exports = {
 
 ![01](docs/images/1708a75466a5aa41.jpg)
 
+### 登录
+
+> uuidv1 + redis-setex 倒是没毛病。
+
+```graphql
+{
+  token: login(data: { phone: "18088260531", password: "123123" })
+}
+```
+
+```bash
+{
+  "data": {
+    "token": "b9347a00-8de6-11ea-95a8-7320e16f2878"
+  }
+}
+```
