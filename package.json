@@ -41,7 +41,7 @@
     "graphql-tag": "^2.10.3",
     "graphql-upload": "^10.0.0",
     "koa-json-error": "^3.1.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "mysql2": "^2.1.0",
     "uuid": "^8.0.0"
   },
